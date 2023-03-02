@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital@1&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 class="header" align="center"><u>Calculator</u></h1>
+    <table align="center" class="calc">
+        <tbody>
+            <tr>
+                <td colspan="4"><input class="input-box" type="text" id="output" disabled placeholder="0"/></td>
+            </tr>
+            <div class="input-container">
+                <tr>
+                    <td><button class="ac">AC</button></td>
+                    <td><input type="button" class="op" value="(" onclick="display('(')"></td>
+                    <td><input type="button" class="op" value=")" onclick="display(')')"></td>
+                    <td><button class="del"><i class="fa-solid fa-delete-left"></i></button></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="7" onclick="display('7')"></td>
+                    <td><input type="button" class="num" value="8" onclick="display('8')"/></td>
+                     <td><input type="button" class="num" value="9" onclick="display('9')"/></td>
+                    <td><button class="op" onclick="display('+')"><i class="fa-solid fa-plus"></i></button></td>              
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="4" onclick="display('4')"/></td>
+                    <td><input type="button" class="num" value="5" onclick="display('5')"/></td>
+                    <td><input type="button" class="num" value="6" onclick="display('6')"/></td>
+                    <td><button class="op" onclick="display('-')"><i class="fa-solid fa-minus"></i></button></td>              
+                </tr>
+                <tr>
+                    <td><input type="button" class="num" value="1" onclick="display('1')"/></td>
+                    <td><input type="button" class="num" value="2" onclick="display('2')"/></td>
+                    <td><input type="button" class="num" value="3" onclick="display('3')"/></td>
+                    <td><button class="op" onclick="display('*')"><i class="fa-solid fa-xmark"></i></button></td>  
+                </tr>
+                <tr>
+                    <td><button class="op" onclick="display('**2')">x<sup>2</sup></button></td>
+                    <td><button class="op" onclick="display('**3')">x<sup>3</sup></button></td>
+                    <td><button class="op" onclick="display('%')"><i class="fa-solid fa-percent"></i></button></td>
+                    <td><button class="op" onclick="display('/')"><i class="fa-solid fa-divide"></i></button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" class="num" id="zero" value="0" onclick="display('0')"/></td>
+                    <td><input type="button" class="num" value="." onclick="display('.')"/></td>
+                    <td><button class="eq"><i class="fa-solid fa-equals"></i></button></td>
+                </tr>
+            </div>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
